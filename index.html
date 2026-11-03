@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex">
+  <title>Ofertas da minha loja</title>
+  <style>
+    :root { --bg:#070a0f; --card:#101823; --text:#eaf1f9; --muted:#8fa2b8; --border:#223145; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255, 77, 141, .18), transparent 45%),
+        var(--bg);
+    }
+    .card {
+      width: min(460px, 100%);
+      padding: 34px 26px 26px;
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      background: linear-gradient(180deg, rgba(20,31,44,.95), rgba(10,16,24,.98));
+      box-shadow: 0 24px 70px rgba(0,0,0,.45);
+      text-align: center;
+    }
+    .avatar {
+      width: 82px;
+      height: 82px;
+      margin: 0 auto 18px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      font-size: 34px;
+      background: linear-gradient(135deg, #f9ce34, #ee2a7b 48%, #6228d7);
+      box-shadow: 0 10px 30px rgba(238,42,123,.3);
+    }
+    h1 { margin: 0 0 8px; font-size: 26px; letter-spacing: -.5px; }
+    .sub { margin: 0 0 26px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 18px;
+      margin-top: 12px;
+      border-radius: 14px;
+      font-weight: 750;
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+      transition: transform .18s ease, filter .18s ease;
+    }
+    .btn:hover { transform: translateY(-1px); filter: brightness(1.06); }
+    .magalu { background: linear-gradient(135deg, #0b5cff, #0a3fb8); }
+    .shopee { background: linear-gradient(135deg, #ee4d2d, #c53a1f); }
+    .disabled { background: #1c2836; color: var(--muted); cursor: not-allowed; }
+    .disabled:hover { transform: none; filter: none; }
+    .note { margin: 22px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+    .handle { margin: 18px 0 0; color: var(--text); font-size: 13px; font-weight: 650; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar">🛍️</div>
+    <span class="badge">OFERTAS ATUALIZADAS TODOS OS DIAS</span>
+    <h1>Ofertas da minha loja</h1>
+    <p class="sub">Magalu e Shopee selecionadas para você.</p>
+    <a class="btn magalu" href="https://www.magazinevoce.com.br/magazinejpsvip10/selecao/ofertasdodia/" target="_blank" rel="noopener">🛍️ Ofertas Magalu</a>
+    <a class="btn shopee" href="https://s.shopee.com.br/LoUszFnEO" target="_blank" rel="noopener">🧡 Ofertas Shopee</a>
+    <p class="note">Link de afiliado (#publi). Preços e disponibilidade sujeitos a alteração.</p>
+    <p class="handle">@jose_jps10</p>
+  </main>
+</body>
+</html>
