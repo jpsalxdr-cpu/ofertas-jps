@@ -73,6 +73,36 @@
     .shopee { background: linear-gradient(135deg, #ee4d2d, #c53a1f); }
     .disabled { background: #1c2836; color: var(--muted); cursor: not-allowed; }
     .disabled:hover { transform: none; filter: none; }
+    .shopee-section { margin-top: 20px; text-align: left; }
+    .shopee-title {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+    }
+    .shopee-list { display: flex; flex-direction: column; gap: 9px; }
+    .shopee-item {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      padding: 13px 15px;
+      border-radius: 13px;
+      border: 1px solid rgba(238,77,45,.35);
+      background: linear-gradient(135deg, rgba(238,77,45,.16), rgba(238,77,45,.05));
+      color: #fff;
+      text-decoration: none;
+      transition: border-color .18s ease, background .18s ease;
+    }
+    .shopee-item:hover {
+      border-color: rgba(238,77,45,.65);
+      background: linear-gradient(135deg, rgba(238,77,45,.24), rgba(238,77,45,.09));
+    }
+    .shopee-name { font-size: 13px; font-weight: 650; line-height: 1.35; }
+    .shopee-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .shopee-price { color: #ffd0c2; font-size: 13px; font-weight: 750; }
+    .shopee-go { color: #ffb39e; font-size: 11px; font-weight: 700; white-space: nowrap; }
     .note { margin: 22px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
     .handle { margin: 18px 0 0; color: var(--text); font-size: 13px; font-weight: 650; }
   </style>
@@ -84,7 +114,7 @@
     <h1>Ofertas da minha loja</h1>
     <p class="sub">Magalu e Shopee selecionadas para você.</p>
     <a class="btn magalu" href="https://www.magazinevoce.com.br/magazinejpsvip10/selecao/ofertasdodia/" target="_blank" rel="noopener">🛍️ Ofertas Magalu</a>
-    <a class="btn shopee" href="https://s.shopee.com.br/LoUszFnEO" target="_blank" rel="noopener">🧡 Ofertas Shopee</a>
+    <div class="shopee-section"><div class="shopee-title">Ofertas Shopee</div><div class="shopee-list"><a class="shopee-item" href="https://s.shopee.com.br/60SrjO6jXR" target="_blank" rel="noopener"><span class="shopee-name">Jogo de Lençol 400 Fios Extra Macio</span><span class="shopee-bottom"><span class="shopee-price">R$ 14,99</span><span class="shopee-go">Ver oferta →</span></span></a><a class="shopee-item" href="https://s.shopee.com.br/6VP8KJ4pWY" target="_blank" rel="noopener"><span class="shopee-name">Hidrabene Protetor Solar Clareador Facial 70 FPS</span><span class="shopee-bottom"><span class="shopee-price">R$ 32,90</span><span class="shopee-go">Ver oferta →</span></span></a><a class="shopee-item" href="https://s.shopee.com.br/6L5i805SrX" target="_blank" rel="noopener"><span class="shopee-name">Ultra Hidratação Efeito Teia Fina Maria</span><span class="shopee-bottom"><span class="shopee-price">R$ 39,97</span><span class="shopee-go">Ver oferta →</span></span></a><a class="shopee-item" href="https://s.shopee.com.br/40hnLiELb6" target="_blank" rel="noopener"><span class="shopee-name">Jogo de Lençol 400 Fios Micropercal</span><span class="shopee-bottom"><span class="shopee-price">R$ 18,90</span><span class="shopee-go">Ver oferta →</span></span></a></div></div>
     <p class="note">Link de afiliado (#publi). Preços e disponibilidade sujeitos a alteração.</p>
     <p class="handle">@jose_jps10</p>
   </main>
